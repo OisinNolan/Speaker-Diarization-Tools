@@ -1,1 +1,1 @@
-# Speaker-Diarization-Irish-Language
+# Speaker Diarization Tools
