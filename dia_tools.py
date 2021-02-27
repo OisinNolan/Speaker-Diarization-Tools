@@ -7,8 +7,8 @@ def main():
     parser.add_argument('method', help='Name of method to be applied to audio. Options are \'ovl\', for overlapped speech detection, and \'dia\', for speaker diarization.')
     parser.add_argument('audio_file', help='Path to .wav audio file to be processed.')
     parser.add_argument('audio_uri', help='Unique identifier for audio file.')
-    parser.add_argument('--outfile', nargs='?', help='Path & filename for output file.')
-    parser.add_argument('--model', nargs='?', help='Name of pretrained model to be used. Options are \'ami\' and \'dihard\'. Default is \'dihard\'')
+    parser.add_argument('--outfile', nargs='?', help='Path & filename for output file. By default, output file will be given the same name as the input .wav file, but with a .ovl.txt or .dia.txt extension depending on the chosen method.')
+    parser.add_argument('--model', nargs='?', help='Name of pretrained model to be used. Options are \'ami\' and \'dihard\'. Default is \'dihard\'. See pyannote.audio for more detail on these models.')
     args = parser.parse_args()
     
     method = args.method

@@ -1,2 +1,5 @@
 def dp2(a):
-    return '{:.2f}'.format(a)
+    '''
+    Return 'a' formatted to two decimal places.
+    '''
+    return "{:.2f}".format(a)
