@@ -26,8 +26,11 @@ optional arguments:
                        for more detail on these models.
 ```
 
-### Output Format
-By default, output files will have the same name as the input `.wav` file, but with the extension `.ovl.txt` or `.dia.txt`, depending on the task being executed (e.g. `C0051.wav` --> `C0051.ovl.txt`). These files are formatted as follows:
+### Output Files
+By default, output files will have the same name as the input `.wav` file, but with the extension `.ovl.txt` or `.dia.txt`, depending on the task being executed (e.g. `C0051.wav` --> `C0051.ovl.txt`). Alternatively, an output file path can be specified using the argument `--outfile` (see above).
+
+
+Output files are formatted as follows:
 
 **Overlapped speech detection output (`.ovl.txt`)**
 ```
