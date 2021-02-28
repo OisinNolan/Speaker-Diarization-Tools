@@ -2,6 +2,7 @@
 Command line tool for running some pre-trained [pyannote.audio](https://github.com/pyannote/pyannote-audio) models and saving their output to text files. Use `dia_tools.py` with various arguments to run specific models on audio files.
 
 ### Usage
+
 For details on arguments run `$ python3 dia_tools.py -h`:
 
 ```
@@ -24,6 +25,18 @@ optional arguments:
   --model [MODEL]      Name of pretrained model to be used. Options are 'ami'
                        and 'dihard'. Default is 'dihard'. See pyannote.audio
                        for more detail on these models.
+```
+
+**Examples**
+
+Calculate overlapped speech for an audio file using default model and output file path:
+```
+$ python3 dia_tools.py ovl ./path/to/audio/file audioId
+```
+
+Calculate speaker diarization for an audio file using AMI model and specified output file path:
+```
+$ python3 dia_tools.py dia ./path/to/audio/file audioId --outfile ./path/to/output/file --model ami
 ```
 
 ### Output Files
