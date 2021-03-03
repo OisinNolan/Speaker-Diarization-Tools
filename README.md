@@ -1,6 +1,17 @@
 # Speaker Diarization Tools
 Command line tool for running some pre-trained [pyannote.audio](https://github.com/pyannote/pyannote-audio) models and saving their output to text files. Use `dia_tools.py` with various arguments to run specific models on audio files.
 
+### Installation
+```
+$ git clone https://github.com/OisinNolan/Speaker-Diarization-Tools.git
+```
+```
+$ cd Speaker-Diarization-Tools
+```
+```
+$ pip3 install -r requirements.txt
+```
+
 ### Usage
 
 For details on arguments run `$ python3 dia_tools.py -h`:
