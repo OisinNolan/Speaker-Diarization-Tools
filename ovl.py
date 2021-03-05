@@ -2,7 +2,7 @@ from pyannote.audio.utils.signal import Binarize
 import util
 import torch
 
-def get_overlapping_speech(audio_file, model_type):
+def get_overlapping_speech(audio_file, model_type, threshold):
     '''
     For a given audio file at path 'audio_file', and model type, which may be
     either 'ovl_ami' or 'ovl_dihard', calculate segments of speech containing
@@ -16,7 +16,7 @@ def get_overlapping_speech(audio_file, model_type):
     # binarize raw OVL scores
     # NOTE: both onset/offset (decision threshold) values were tuned on AMI dataset.
     # We can change these values according to our needs
-    binarize = Binarize(offset=0.55, onset=0.55, log_scale=True, 
+    binarize = Binarize(offset=threshold, onset=threshold, log_scale=True, 
                         min_duration_off=0.1, min_duration_on=0.1)
 
     # overlapped speech regions (as `pyannote.core.Timeline` instance)

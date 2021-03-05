@@ -1,0 +1,9 @@
+brump <NA> <NA> 6.62 6.86 <NA>
+brump <NA> <NA> 7.86 8.01 <NA>
+brump <NA> <NA> 11.99 12.95 <NA>
+brump <NA> <NA> 13.22 13.45 <NA>
+brump <NA> <NA> 16.36 18.04 <NA>
+brump <NA> <NA> 18.55 18.88 <NA>
+brump <NA> <NA> 19.14 20.87 <NA>
+brump <NA> <NA> 21.38 22.00 <NA>
+brump <NA> <NA> 22.23 22.37 <NA>
