@@ -18,24 +18,30 @@ For details on arguments run `$ python3 dia_tools.py -h`:
 
 ```
 usage: dia_tools.py [-h] [--outfile [OUTFILE]] [--model [MODEL]]
+                    [--ovl_threshold [OVL_THRESHOLD]]
                     method audio_file audio_uri
 
 positional arguments:
-  method               Name of method to be applied to audio. Options are
-                       'ovl', for overlapped speech detection, and 'dia', for
-                       speaker diarization.
-  audio_file           Path to .wav audio file to be processed.
-  audio_uri            Unique identifier for audio file.
+  method                Name of method to be applied to audio. Options are
+                        'ovl', for overlapped speech detection, and 'dia', for
+                        speaker diarization.
+  audio_file            Path to .wav audio file to be processed.
+  audio_uri             Unique identifier for audio file.
 
 optional arguments:
-  -h, --help           show this help message and exit
-  --outfile [OUTFILE]  Path & filename for output file. By default, output
-                       file will be given the same name as the input .wav
-                       file, but with a .ovl.txt or .dia.txt extension
-                       depending on the chosen method.
-  --model [MODEL]      Name of pretrained model to be used. Options are 'ami'
-                       and 'dihard'. Default is 'dihard'. See pyannote.audio
-                       for more detail on these models.
+  -h, --help            show this help message and exit
+  --outfile [OUTFILE]   Path & filename for output file. By default, output
+                        file will be given the same name as the input .wav
+                        file, but with a .ovl.txt or .dia.txt extension
+                        depending on the chosen method.
+  --model [MODEL]       Name of pretrained model to be used. Options are 'ami'
+                        and 'dihard'. Default is 'dihard'. See pyannote.audio
+                        for more detail on these models.
+  --ovl_threshold [OVL_THRESHOLD]
+                        Decimal number between 0 and 1 specifying the
+                        threshold deciding whether or not overlapped speech is
+                        present. 0 --> all overlap, 1 --> no overlap, 0.55 is
+                        default.
 ```
 
 **Examples**
